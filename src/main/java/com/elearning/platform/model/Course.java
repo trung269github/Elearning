@@ -39,7 +39,7 @@ public class Course {
     private String imgUrl;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "tutorId", nullable = false)
+    @JoinColumn(name = "tutorId")
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Tutor tutor;
 
